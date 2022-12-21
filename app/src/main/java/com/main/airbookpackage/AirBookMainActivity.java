@@ -2,13 +2,20 @@ package com.main.airbookpackage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
-public class AirBookMainActivity extends AppCompatActivity {
+import com.main.mylibrary.LibraryMain;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+public class AirBookMainActivity {
+    private Context mContext;
+    public AirBookMainActivity(Context mContext) {
+        this.mContext = mContext;
+    }
+    public void redirectToMainPage(){
+       Intent myIntent = new Intent(mContext, LibraryMain.class);
+        //myIntent.putExtra("key", value); //Optional parameters
+       mContext.startActivity(myIntent);
     }
 }
