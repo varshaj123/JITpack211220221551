@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 import com.main.mylibrary.LibraryMain;
 
-public class AirBookMainActivity {
+public class AirBookMainActivity extends AppCompatActivity {
     private Context mContext;
     public AirBookMainActivity(Context mContext) {
         this.mContext = mContext;
