@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'maven-publish'
 }
 
 android {
@@ -27,7 +28,20 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.varshaj123'
+            artifactId = 'AirBookLibrary'
+            version = "1.0.1"
 
+            pom {
+                description = 'A description of my library'
+
+            }
+        }
+    }
+}
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.5.1'
