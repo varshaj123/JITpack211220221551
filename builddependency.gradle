@@ -1,0 +1,20 @@
+buildscript {
+    ext {
+        /*AppData*/
+        applicationId = "com.main.airbookpackage"
+        projNameSpace = "com.main.airbookpackage"
+        projCompileSdkVersion = 33
+        projTargetSdkVersion = 33
+        projMinSdkVersion = 21
+        appVersionNumber = 1
+        appVersionName = "1.0"
+
+        /*Dependency versions*/
+        androidxAppcompatVersion = "1.5.1"
+        androidGoogleMaterialVersion = "1.7.0"
+        androidConstraintLayoutVersion = "2.1.4"
+        androidJunitVersion = "4.13.2"
+        androidxTestExt = "1.1.4"
+        androidxTestEspresso = "3.5.0"
+    }
+}
